@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Our Services — Septic Tank Cleaning & Waste Management Catalogue | Green Septic Tank</title>
+  <meta content="Professional septic tank cleaning services in Hyderabad: residential, commercial, STP plant cleaning, sludge suction, construction camp tanks, and 24/7 vacuum tankers. Call +91 94405 14057." name="description" />
+  <link href="images/logo.webp" rel="icon" type="image/webp" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .card.sweeperCard,
+    .cat-card.sweeperCard {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 28px;
+      background: #ffffff;
+      border: 1px solid #e7eee9;
+      box-shadow: 0px 8px 24px 0px rgba(19, 19, 18, 0.06);
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .card.sweeperCard::after,
+    .cat-card.sweeperCard::after {
+      content: "";
+      position: absolute;
+      bottom: -30%;
+      right: -30%;
+      width: 130px;
+      height: 130px;
+      background: #23c55e;
+      filter: blur(70px);
+      border-radius: 50%;
+      transition: width 1s ease, height 1s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .card.sweeperCard::before,
+    .cat-card.sweeperCard::before {
+      content: "";
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: -160%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-origin: center;
+      width: 0;
+      height: 0;
+      background: #23c55e;
+      filter: blur(70px);
+      border-radius: 50%;
+      transition: width 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+        height 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+        bottom 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+        filter 0.9s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .card.sweeperCard:hover,
+    .cat-card.sweeperCard:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 48px rgba(35, 197, 94, 0.22);
+      border-color: #23c55e;
+    }
+
+    .card.sweeperCard:hover::before,
+    .cat-card.sweeperCard:hover::before {
+      bottom: -230%;
+      width: 1100px;
+      height: 1100px;
+      filter: blur(1px);
+    }
+
+    .sweeperCard .cat-media {
+      position: relative;
+      z-index: 2;
+      border-radius: 26px 26px 0 0;
+      overflow: hidden;
+    }
+
+    .sweeperCard .containers {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 26px 28px 24px;
+    }
+
+    .sweeperCard .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: #e5f6eb;
+      margin-bottom: 18px;
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard .icon svg {
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard:hover .icon {
+      background: #ffffff;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard:hover .icon svg {
+      filter: none;
+      stroke: #16a34a;
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard .title {
+      color: #171d29;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.35;
+      white-space: normal;
+      transition: 0.6s all ease;
+      margin: 0 0 10px 0;
+    }
+
+    .sweeperCard .subtitle {
+      color: #64748b;
+      font-size: 14.5px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      transition: 0.6s all ease;
+      margin: 0 0 20px 0;
+      flex: 1;
+    }
+
+    .sweeperCard .cat-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      transition: border-color 0.6s ease;
+    }
+
+    .sweeperCard:hover .cat-foot {
+      border-top-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .sweeperCard .live-pill {
+      transition: all 0.6s ease;
+    }
+
+    .sweeperCard:hover .live-pill {
+      background: rgba(255, 255, 255, 0.22) !important;
+      color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.4) !important;
+      backdrop-filter: blur(4px);
+    }
+
+    .sweeperCard .linkMore {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.6rem;
+      color: #072713;
+      background: #eefbf1;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px;
+      text-decoration: none;
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard .linkMore svg {
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard:hover .title,
+    .sweeperCard:hover .subtitle {
+      color: #ffffff;
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard:hover .linkMore {
+      color: #15803d;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+      transform: translateX(2px);
+      transition: 0.6s all ease;
+    }
+
+    .sweeperCard:hover .linkMore svg {
+      filter: none;
+      stroke: #15803d;
+      fill: #15803d;
+      transform: translate(2px, -2px);
+      transition: 0.6s all ease;
+    }
+
+    @media (max-width: 991px) {
+      .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cat-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link href="https://www.greenseptictankcleaningservices.com/services" rel="canonical" />
+  <meta content="Our Services — Septic Tank Cleaning & Waste Management Catalogue | Green Septic Tank" property="og:title" />
+  <meta content="Professional septic tank cleaning services in Hyderabad: residential, commercial, STP plant cleaning, sludge suction, construction camp tanks, and 24/7 vacuum tankers. Call +91 94405 14057." property="og:description" />
+  <meta content="website" property="og:type" />
+  <meta content="https://www.greenseptictankcleaningservices.com/services" property="og:url" />
+  <meta content="https://www.greenseptictankcleaningservices.com/images/resource/notch-septic-tank-cleaning-services.webp" property="og:image" />
+  <meta content="Green Septic Tank Cleaning Services" property="og:site_name" />
+  <meta content="en_IN" property="og:locale" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="Our Services — Septic Tank Cleaning & Waste Management Catalogue | Green Septic Tank" name="twitter:title" />
+  <meta content="Professional septic tank cleaning services in Hyderabad: residential, commercial, STP plant cleaning, sludge suction, construction camp tanks, and 24/7 vacuum tankers. Call +91 94405 14057." name="twitter:description" />
+  <meta content="https://www.greenseptictankcleaningservices.com/images/resource/notch-septic-tank-cleaning-services.webp" name="twitter:image" />
+  <meta content="IN-TG" name="geo.region" />
+  <meta content="Hyderabad" name="geo.placename" />
+  <meta content="17.3182;78.5345" name="geo.position" />
+  <meta content="17.3182, 78.5345" name="ICBM" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "HomeAndConstructionBusiness",
+    "EmergencyService",
+    "ProfessionalService"
+  ],
+  "@id": "https://www.greenseptictankcleaningservices.com/#business",
+  "name": "Green Septic Tank Cleaning Services",
+  "alternateName": [
+    "Septic Tank Cleaning Company Near Me in Hyderabad",
+    "Green Septic Services Hyderabad",
+    "Green Septic Tank Cleaners"
+  ],
+  "url": "https://www.greenseptictankcleaningservices.com/",
+  "logo": "https://www.greenseptictankcleaningservices.com/images/logo.webp",
+  "image": "https://www.greenseptictankcleaningservices.com/images/resource/notch-septic-tank-cleaning-services.webp",
+  "description": "Professional 24/7 septic tank cleaning, vacuum tanker sludge pumping, STP plant maintenance, and emergency drainage unblocking in Hyderabad with 20+ years of field experience.",
+  "telephone": "+919440514057",
+  "email": "greenseptictankcleaningservices@gmail.com",
+  "priceRange": "₹₹",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, UPI, Net Banking, Credit Card",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "45-591NP, Maruthi Nagar, Badangpet Village, Balapur Mandal",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500058",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 17.3182,
+    "longitude": 78.5345
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Hyderabad"
+    },
+    {
+      "@type": "City",
+      "name": "Secunderabad"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Badangpet"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Balapur"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "LB Nagar"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kanchan Bagh"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Gachibowli"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Madhapur"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kukatpally"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Miyapur"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Kondapur"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Uppal"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Ranga Reddy"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Septic Tank & Sanitation Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Residential Septic Tank Cleaning",
+          "description": "High-powered vacuum tanker pumping for homes, villas, and residential communities."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Septic Tank Cleaning",
+          "description": "Heavy sludge extraction for hotels, tech parks, shopping malls, and hospitals."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "STP Plant Cleaning & Maintenance",
+          "description": "Comprehensive biological chamber cleaning and aeration tank desludging."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "High-Pressure Hydro Jetting & Drainage Unblocking",
+          "description": "200+ bar hydro-jetting to clear stubborn pipeline blockages, roots, and grease."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "24/7 Emergency Septic Overflow Response",
+          "description": "Rapid 30 to 45 minute arrival for emergency sewage overflows anywhere in Hyderabad."
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "385",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+  </script>
+</head>
+
+<body>
+  <nav class="scrolled">
+    <div class="wrap nav-in">
+      <a aria-label="Green Septic Tank Cleaning Services" class="brand" href="index.html">
+        <img alt="Green Septic Tank Cleaning Services Logo" class="brand-logo" height="52" src="images/logo.webp"
+          width="200" />
+      </a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="nav-right">
+
+        <a class="btn btn-orange nav-quote" href="contact.html"><span class="circle"></span><span>Book Now</span></a>
+        <button aria-controls="navPanel" aria-expanded="false" aria-label="Toggle navigation menu" class="nav-burger"
+          id="navBurger" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-panel" hidden="" id="navPanel">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="contact.html">Contact Us</a>
+      <a class="btn btn-orange" href="#contact"><span class="circle"></span><span>Book Cleaning Service</span></a>
+    </div>
+  </nav>
+  <header class="page-hero">
+    <div class="page-hero-media">
+      <img alt="Sanitation Services Catalogue" height="720" src="images/main-slider/eco-friendly-septic-services.webp"
+        width="1800" />
+    </div>
+    <div class="page-hero-shade"></div>
+    <div class="page-hero-glow"></div>
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-grain"></div>
+    <div class="wrap page-hero-in">
+
+      <span class="label page-hero-eyebrow">Service Catalogue</span>
+      <h1>Comprehensive Sanitation Solutions <em>For Every Property</em></h1>
+      <p>From private villas to large commercial complexes and industrial STPs, our 2+ years of field experience,
+        modern vacuum suction fleet, and certified disposal deliver guaranteed satisfaction.</p>
+    </div>
+  </header>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head left has-qlinks reveal">
+        <span class="label">Full Range Overview</span>
+        <h2>Professional Sanitation Services in Hyderabad</h2>
+        <p>Explore our specialized service capabilities below. Each service includes high-power vacuum suction, odor
+          control, and eco-friendly municipal disposal.</p>
+      </div>
+      <div class="cat-grid">
+        
+        <div class="card sweeperCard cat-card reveal o-hidden">
+          <div class="cat-media">
+            <img alt="Residential Septic Tank Cleaning" src="images/resource/residential-septic-tank.webp" />
+            <span class="cat-badge">Residential</span>
+          </div>
+          <div class="containers cat-body">
+            <div class="icon">
+              <svg fill="none" height="28" stroke="#23C55E" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" viewBox="0 0 24 24" width="28">
+                <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"></path>
+                <path d="M9 21V12h6v9"></path>
+              </svg>
+            </div>
+            <div class="title my-3">Residential Septic Tank Cleaning</div>
+            <div class="subtitle">Designed for independent houses, villas, and small housing colonies. Eliminates bad
+              smells, toilet bubbling, and slow drainage with powerful suction that leaves zero mess.</div>
+            <div class="cat-foot mt-3">
+              <span class="live-pill" style="padding:4px 10px; font-size:0.75rem;">Capacity: Up to 6,000L</span>
+              <a class="linkMore mt-3" href="contact.html">
+                <span>Book Tanker</span>
+                <svg fill="none" height="19" viewBox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
+                    fill="#072713"></path>
+                  <path d="M9.25 15.3499V9.34985H15.25" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                  <path d="M9.25 9.34985L15.25 15.3499" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card sweeperCard cat-card reveal o-hidden">
+          <div class="cat-media">
+            <img alt="Commercial Septic Tank Cleaning" src="images/resource/commercial-septic-tank-cleaning.webp" />
+            <span class="cat-badge">Commercial</span>
+          </div>
+          <div class="containers cat-body">
+            <div class="icon">
+              <svg fill="none" height="28" stroke="#23C55E" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" viewBox="0 0 24 24" width="28">
+                <rect height="20" rx="2" width="16" x="4" y="2"></rect>
+                <path d="M9 22v-4h6v4M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"></path>
+              </svg>
+            </div>
+            <div class="title my-3">Commercial Septic Tank Cleaning</div>
+            <div class="subtitle">For restaurants, commercial complexes, banquet halls, and offices. Heavy grease and
+              fat extraction with flexible night scheduling so your business is never disrupted.</div>
+            <div class="cat-foot mt-3">
+              <span class="live-pill" style="padding:4px 10px; font-size:0.75rem;">Off-Peak &amp; Night Hours</span>
+              <a class="linkMore mt-3" href="contact.html">
+                <span>Book Tanker</span>
+                <svg fill="none" height="19" viewBox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
+                    fill="#072713"></path>
+                  <path d="M9.25 15.3499V9.34985H15.25" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                  <path d="M9.25 9.34985L15.25 15.3499" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card sweeperCard cat-card reveal o-hidden">
+          <div class="cat-media">
+            <img alt="STP Plant Cleaning Services" src="images/resource/stp-plant-cleaning.webp" />
+            <span class="cat-badge">STP Plant</span>
+          </div>
+          <div class="containers cat-body">
+            <div class="icon">
+              <svg fill="none" height="28" stroke="#23C55E" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" viewBox="0 0 24 24" width="28">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                <path d="M9 13a3 3 0 0 0 6 0"></path>
+              </svg>
+            </div>
+            <div class="title my-3">STP Plant Cleaning &amp; Maintenance</div>
+            <div class="subtitle">Sewage Treatment Plant deep cleaning, settling chamber sludge removal, and biological
+              balance restoration for gated communities, IT parks, and factories.</div>
+            <div class="cat-foot mt-3">
+              <span class="live-pill" style="padding:4px 10px; font-size:0.75rem;">Capacity: 50KLD - 500KLD</span>
+              <a class="linkMore mt-3" href="contact.html">
+                <span>Book Tanker</span>
+                <svg fill="none" height="19" viewBox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
+                    fill="#072713"></path>
+                  <path d="M9.25 15.3499V9.34985H15.25" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                  <path d="M9.25 9.34985L15.25 15.3499" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card sweeperCard cat-card reveal o-hidden">
+          <div class="cat-media">
+            <img alt="Septic Tank Sludge Cleaning" src="images/resource/septic-tank-sludge-cleaning.webp" />
+            <span class="cat-badge">Sludge Removal</span>
+          </div>
+          <div class="containers cat-body">
+            <div class="icon">
+              <svg fill="none" height="28" stroke="#23C55E" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" viewBox="0 0 28 29" width="28" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.7222 9.04435V6.71102C23.7222 5.42235 22.6775 4.37769 21.3888 4.37769L6.61106 4.37769C5.32239 4.37769 4.27773 5.42235 4.27773 6.71102V9.04435C4.27773 10.333 5.32239 11.3777 6.61106 11.3777H21.3888C22.6775 11.3777 23.7222 10.333 23.7222 9.04435Z">
+                </path>
+                <path
+                  d="M23.7222 21.4888V19.1555C23.7222 17.8668 22.6775 16.8221 21.3888 16.8221H15.9444C14.6557 16.8221 13.6111 17.8668 13.6111 19.1555V21.4888C13.6111 22.7775 14.6557 23.8221 15.9444 23.8221H21.3888C22.6775 23.8221 23.7222 22.7775 23.7222 21.4888Z">
+                </path>
+              </svg>
+            </div>
+            <div class="title my-3">Septic Tank Sludge &amp; Desludging</div>
+            <div class="subtitle">Deep extraction of hardened bottom sediment using high-pressure water jetting and
+              high-vacuum pumps. Restores 100% soak-pit percolation capacity.</div>
+            <div class="cat-foot mt-3">
+              <span class="live-pill" style="padding:4px 10px; font-size:0.75rem;">Hard Sludge Removal</span>
+              <a class="linkMore mt-3" href="contact.html">
+                <span>Book Tanker</span>
+                <svg fill="none" height="19" viewBox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
+                    fill="#072713"></path>
+                  <path d="M9.25 15.3499V9.34985H15.25" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                  <path d="M9.25 9.34985L15.25 15.3499" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card sweeperCard cat-card reveal o-hidden">
+          <div class="cat-media">
+            <img alt="Labour Camp Septic Tank Cleaning" src="images/resource/labour-camp-septic-tank.webp" />
+            <span class="cat-badge">Labour Camps</span>
+          </div>
+          <div class="containers cat-body">
+            <div class="icon">
+              <svg fill="none" height="28" stroke="#23C55E" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" viewBox="0 0 24 24" width="28">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="title my-3">Construction Camp Septic Tank Services</div>
+            <div class="subtitle">Scheduled daily or weekly pump-outs for high-density construction worker camps and
+              temporary sanitation facilities with rapid multi-truck dispatch.</div>
+            <div class="cat-foot mt-3">
+              <span class="live-pill" style="padding:4px 10px; font-size:0.75rem;">Scheduled Contracts</span>
+              <a class="linkMore mt-3" href="contact.html">
+                <span>Book Tanker</span>
+                <svg fill="none" height="19" viewBox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
+                    fill="#072713"></path>
+                  <path d="M9.25 15.3499V9.34985H15.25" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                  <path d="M9.25 9.34985L15.25 15.3499" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card sweeperCard cat-card reveal o-hidden">
+          <div class="cat-media">
+            <img alt="Industrial Septic Tank Cleaning" src="images/resource/industrial-septic-tank-cleaning.webp" />
+            <span class="cat-badge">Industrial</span>
+          </div>
+          <div class="containers cat-body">
+            <div class="icon">
+              <svg fill="none" height="28" stroke="#23C55E" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" viewBox="0 0 24 24" width="28">
+                <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+                <path d="M18 16h2M18 12h2M7 18h4"></path>
+              </svg>
+            </div>
+            <div class="title my-3">Industrial Septic &amp; Waste Cleaning</div>
+            <div class="subtitle">Heavy containment cleaning for industrial estates, factories, and fabrication
+              facilities. Compliant with pollution control board manifesting requirements.</div>
+            <div class="cat-foot mt-3">
+              <span class="live-pill" style="padding:4px 10px; font-size:0.75rem;">Industrial Vacuum Pumps</span>
+              <a class="linkMore mt-3" href="contact.html">
+                <span>Book Tanker</span>
+                <svg fill="none" height="19" viewBox="0 0 18 19" width="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
+                    fill="#072713" stroke="#072713"></path>
+                  <path
+                    d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
+                    fill="#072713"></path>
+                  <path
+                    d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
+                    fill="#072713"></path>
+                  <path d="M9.25 15.3499V9.34985H15.25" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                  <path d="M9.25 9.34985L15.25 15.3499" stroke="#072713" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="1.5"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="bottomCta" style="background:#f8fafc; padding:20px 0 80px;">
+    <div class="wrap">
+      <div class="cta-card reveal" id="ctaCard">
+        <img class="cta-bg" src="images/background/eco-friendly-septic-solutions.webp"
+          alt="Septic cleaning equipment and vacuum tanker fleet in Hyderabad" />
+        <img class="cta-deco cd-l" src="images/deco-suction-hose.webp" alt="" aria-hidden="true" />
+        <img class="cta-deco cd-r" src="images/deco-jet-nozzle.webp" alt="" aria-hidden="true" />
+        <div class="cta-inner">
+
+          <h2>Ready to Restore <em>Cleanliness</em> &amp; Eliminate Foul Odors?</h2>
+          <p>
+            Whether you need urgent sewage removal, drainage blockage clearing, or scheduled society maintenance, our
+            fleet is ready to dispatch now. One call saves your property from severe sewage damage.
+          </p>
+          <div class="btns">
+            <a class="btn btn-white" href="tel:+919440514057">
+              <span class="circle"></span>
+              <svg fill="none" height="19" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" width="19">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z">
+                </path>
+              </svg>
+              <span>Call Now</span>
+            </a>
+            <a class="btn btn-whatsapp"
+              href="https://wa.me/919440514057?text=Hello%20Green%20Septic%20Tank%20Cleaning%20Services,%20I%20would%20like%20to%20book%20a%20tanker."
+              rel="noopener" target="_blank">
+              <span class="circle"></span>
+              <svg fill="currentColor" height="19" viewBox="0 0 24 24" width="19">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z">
+                </path>
+              </svg>
+              <span>Book via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div aria-hidden="true" class="f-tools">
+        <img alt="Septic suction hose" src="images/deco-suction-hose.webp" />
+        <img alt="High-pressure hydro-jetting nozzle" src="images/deco-jet-nozzle.webp" />
+        <img alt="Sludge suction wand and valve" src="images/deco-sludge-pipe.webp" />
+      </div>
+      <div class="foot-grid">
+        <div class="f-col">
+          <h4>Quick Links</h4>
+          <a href="about.html">About us</a>
+          <a href="areas.html">Service Areas</a>
+          <a href="index.html#works">How it Works</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="services.html">All Services</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="index.html#faqs">FAQs</a>
+        </div>
+        <div class="f-col">
+          <h4>Services</h4>
+          <a href="services.html">Residential Septic</a>
+          <a href="services.html">Commercial Cleaning</a>
+          <a href="services.html">STP Plant Cleaning</a>
+          <a href="services.html">Sludge Suction</a>
+          <a href="services.html">Labour Camp Tanks</a>
+          <a href="services.html">Industrial Solutions</a>
+          <a href="services.html">Hospital Sanitation</a>
+          <a href="services.html">Drainage Unblocking</a>
+        </div>
+        <div class="f-col">
+          <h4>Company</h4>
+
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          <a href="cookies-policy.html">Cookies Policy</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <div>
+          <div class="fc-item">
+            <span class="fc-ic">
+              <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"
+                viewBox="0 0 24 24" width="22">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z">
+                </path>
+              </svg>
+            </span>
+            <div>
+              <b>Phone Number</b>
+              <span>+91 9440 514 057</span>
+            </div>
+          </div>
+          <div class="fc-item">
+            <span class="fc-ic">
+              <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"
+                viewBox="0 0 24 24" width="22">
+                <rect height="14" rx="2" width="18" x="3" y="5"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+            </span>
+            <div>
+              <b>Email Address</b>
+              <span>greenseptictankcleaningservices@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="fc-item">
+            <span class="fc-ic">
+              <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"
+                viewBox="0 0 24 24" width="22">
+                <path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"></path>
+                <circle cx="12" cy="10" r="2.5"></circle>
+              </svg>
+            </span>
+            <div>
+              <b>Physical Address</b>
+              <p>45-591NP, Maruthi Nagar, Badangpet Village, Balapur Mandal, Ranga Reddy, Hyderabad — 500058,
+                Telangana, India
+              <p>
+            </div>
+          </div>
+          <div class="f-socials">
+            <a aria-label="WhatsApp" href="https://wa.me/919440514057?text=Hello%20Green%20Septic%20Tank%20Cleaning"
+              rel="noopener" target="_blank">
+              <svg fill="currentColor" height="18" viewBox="0 0 24 24" width="18">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z">
+                </path>
+              </svg>
+            </a>
+            <a aria-label="Phone" href="tel:+919440514057">
+              <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"
+                viewBox="0 0 24 24" width="18">
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z">
+                </path>
+              </svg>
+            </a>
+            <a aria-label="Location" href="https://maps.google.com/?q=Badangpet+Balapur+Hyderabad" rel="noopener"
+              target="_blank">
+              <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"
+                viewBox="0 0 24 24" width="18">
+                <path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11Z"></path>
+                <circle cx="12" cy="10" r="2.5"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="f-bar">
+        <span>© 2026 Green Septic Tank Cleaning Services. All rights reserved.</span>
+        <span>2+ Years Field Experience · Municipal Eco-Disposal · Hyderabad, Telangana</span>
+      </div>
+      <div class="f-mark-wrap">
+
+      </div>
+    </div>
+
+    <div class="floating-dock">
+      <a aria-label="Chat on WhatsApp" class="float-btn whatsapp"
+        href="https://wa.me/919440514057?text=Hello%20Green%20Septic%20Tank%20Cleaning%20Services,%20I%20need%20assistance."
+        rel="noopener" target="_blank">
+        <svg viewbox="0 0 24 24">
+          <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z">
+          </path>
+        </svg>
+      </a>
+      <a aria-label="Call +91 94405 14057" class="float-btn call" href="tel:+919440514057">
+        <svg viewbox="0 0 24 24">
+          <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"></path>
+        </svg>
+      </a>
+    </div>
+
+  </footer>
+
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/MotionPathPlugin.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

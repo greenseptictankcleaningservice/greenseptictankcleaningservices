@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.greenseptictankcleaningservices.com/sitemap.xml
+Host: https://www.greenseptictankcleaningservices.com
