@@ -7093,3 +7093,51 @@ nav:not(.scrolled) .brand .brand-text span {
     justify-content: center;
   }
 }
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.cc-row > div,
+.fc-item > div {
+  min-width: 0;
+  flex: 1;
+}
+
+.cc-row div span,
+.fc-item div span,
+.legal-card p,
+.legal-card li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+  .cc-form {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand img.brand-logo {
+    max-width: 175px;
+    height: auto;
+  }
+  nav.scrolled .nav-in {
+    padding: 12px 14px 12px 18px;
+  }
+  .floating-dock {
+    right: 12px;
+    bottom: 14px;
+    gap: 10px;
+  }
+  .float-btn {
+    width: 48px;
+    height: 48px;
+  }
+}
