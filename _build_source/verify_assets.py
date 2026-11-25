@@ -8,6 +8,7 @@ html_files = [
     "about.html",
     "areas.html",
     "contact.html",
+    "blog.html",
     "privacy-policy.html",
     "terms-and-conditions.html",
     "cookies-policy.html",

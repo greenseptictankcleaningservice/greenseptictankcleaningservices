@@ -270,42 +270,42 @@
       n: "Shanthan",
       r: "Verified Google Review · Dilsukhnagar, Hyderabad",
       av: "images/resource/avatar-1.webp",
-      ph: "images/resource/residential-septic-tank.webp"
+      ph: "images/background/new_images/img14.jpg"
     },
     {
       q: "“Mr. Das and his co-worker cleaned the septic tank and all manholes inside the house very nicely. They have done an extremely good job with their modern vacuum tanker. Honest, reasonable price and prompt arrival. I highly recommend Mr. Das and Green Septic Tank Cleaning Services to everyone in Hyderabad.”",
       n: "Venkatraman Athreya",
       r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-2.webp",
-      ph: "images/resource/commercial-septic-tank-cleaning.webp"
+      ph: "images/background/new_images/img11.jpg"
     },
     {
       q: "“Fast and reliable service! Their team arrived right on schedule with a heavy vacuum suction truck. Thoroughly pumped out the septic tank and cleared the drain line without any mess or lingering odor. Very reasonable rates and professional behavior. Truly 5-star septic service in Hyderabad.”",
       n: "Raja Simha Reddy Police",
       r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-3.webp",
-      ph: "images/resource/notch-septic-tank-cleaning-services.webp"
+      ph: "images/background/new_images/img12.jpg"
     },
     {
       q: "“Good service, work neat ga chesaru 👍. They brought long suction hoses that reached our interior backyard easily. Cleaned the septic tank completely and left the premises spotless. Very polite workers and punctual dispatch.”",
       n: "Kethavath Sharath",
       r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-4.webp",
-      ph: "images/resource/labour-camp-septic-tank.webp"
+      ph: "images/background/new_images/img13.jpg"
     },
     {
       q: "“Excellent services and timely work. Their commercial-grade vacuum suction tanker reached within 35 minutes of calling. Handled the sludge extraction safely and transported it directly to authorized STPs. Best septic tank cleaner in Greater Hyderabad.”",
       n: "Photo Teaser",
       r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-1.webp",
-      ph: "images/resource/residential-septic-tank.webp"
+      ph: "images/background/new_images/img1.jpg"
     },
     {
       q: "“Excellent worker, time to time working! Punctual arrival, heavy-duty suction machinery, and transparent upfront charges. Very polite crew and clean execution. Highly recommended for all residential and commercial septic cleaning.”",
       n: "Jarupla Thirupathi",
       r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-2.webp",
-      ph: "images/resource/commercial-septic-tank-cleaning.webp"
+      ph: "images/background/new_images/img9.jpg"
     }
   ];
 

@@ -2,7 +2,7 @@ import os
 from bs4 import BeautifulSoup
 
 files = [
-    "index.html", "services.html", "about.html", "areas.html", "contact.html",
+    "index.html", "services.html", "about.html", "areas.html", "contact.html", "blog.html",
     "privacy-policy.html", "terms-and-conditions.html", "cookies-policy.html", "disclaimer.html"
 ]
 
@@ -20,6 +20,6 @@ for f in files:
             broken += 1
 
 if broken == 0:
-    print("ALL INTERNAL LINKS ARE 100% VALID ACROSS ALL 9 PAGES!")
+    print("ALL INTERNAL LINKS ARE 100% VALID ACROSS ALL 10 PAGES!")
 else:
     print(f"Found {broken} broken links!")
