@@ -266,32 +266,46 @@
 
   var testData = [
     {
-      q: "“Outstanding emergency service! During continuous rains in Badangpet, our septic tank started overflowing back into ground floor lines. Called Green Septic Tank Cleaning early morning and their vacuum suction tanker arrived in 35 minutes. They pumped out the entire sludge volume cleanly with zero foul smell left behind. Honest per-load pricing and highly polite crew.”",
-      n: "Ramesh Reddy",
-      r: "Verified Google Review · Badangpet (HQ), Hyderabad",
+      q: "“We live in the Dilsukhnagar area, and last night heavy rainfall flooded our property due to a blocked manhole. Found Green Septic Tank Cleaning Services on Google Maps and called them immediately. They answered within seconds, arrived on time with required equipment, and cleared all accumulated water by removing the manhole blockage. Highly experienced, worked professionally, and very affordable pricing. Highly recommend them across Hyderabad!”",
+      n: "Shanthan",
+      r: "Verified Google Review · Dilsukhnagar, Hyderabad",
       av: "images/resource/avatar-1.webp",
       ph: "images/resource/residential-septic-tank.webp"
     },
     {
-      q: "“5-star service on Google for a reason! Had a critical drainage and septic tank blockage in our residential community near Kanchan Bagh. Green Septic team brought their heavy-duty vacuum suction truck and high-pressure jetting wand. Cleared 2 full tanker loads in under an hour. Cleanest septic work we have seen in Hyderabad.”",
-      n: "Syed Khaja Mohiuddin",
-      r: "Local Guide on Google · Kanchan Bagh, Hyderabad",
+      q: "“Mr. Das and his co-worker cleaned the septic tank and all manholes inside the house very nicely. They have done an extremely good job with their modern vacuum tanker. Honest, reasonable price and prompt arrival. I highly recommend Mr. Das and Green Septic Tank Cleaning Services to everyone in Hyderabad.”",
+      n: "Venkatraman Athreya",
+      r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-2.webp",
       ph: "images/resource/commercial-septic-tank-cleaning.webp"
     },
     {
-      q: "“Managing a 40-flat residential gated complex in LB Nagar requires reliable septic maintenance. We have hired Green Septic Tank Cleaning for scheduled vacuum suction for 3 consecutive years. Their 100ft suction hoses reached our interior backyard effortlessly without disturbing landscape or parking. Punctual, transparent, and strictly eco-friendly.”",
-      n: "Venkat Ramana Rao",
-      r: "Verified Google Review · LB Nagar, Hyderabad",
+      q: "“Fast and reliable service! Their team arrived right on schedule with a heavy vacuum suction truck. Thoroughly pumped out the septic tank and cleared the drain line without any mess or lingering odor. Very reasonable rates and professional behavior. Truly 5-star septic service in Hyderabad.”",
+      n: "Raja Simha Reddy Police",
+      r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-3.webp",
       ph: "images/resource/notch-septic-tank-cleaning-services.webp"
     },
     {
-      q: "“Called them for emergency grease trap and septic tank cleaning for our commercial establishment in Dilsukhnagar. The crew arrived promptly at night, worked safely with complete protective equipment, and neutralized all septic gases. Clean invoice, fixed upfront charges, and zero hassle. Truly Hyderabad's most trusted septic service.”",
-      n: "Anil Kumar Sharma",
-      r: "Verified Google Review · Dilsukhnagar, Hyderabad",
+      q: "“Good service, work neat ga chesaru 👍. They brought long suction hoses that reached our interior backyard easily. Cleaned the septic tank completely and left the premises spotless. Very polite workers and punctual dispatch.”",
+      n: "Kethavath Sharath",
+      r: "Verified Google Review · Hyderabad",
       av: "images/resource/avatar-4.webp",
       ph: "images/resource/labour-camp-septic-tank.webp"
+    },
+    {
+      q: "“Excellent services and timely work. Their commercial-grade vacuum suction tanker reached within 35 minutes of calling. Handled the sludge extraction safely and transported it directly to authorized STPs. Best septic tank cleaner in Greater Hyderabad.”",
+      n: "Photo Teaser",
+      r: "Verified Google Review · Hyderabad",
+      av: "images/resource/avatar-1.webp",
+      ph: "images/resource/residential-septic-tank.webp"
+    },
+    {
+      q: "“Excellent worker, time to time working! Punctual arrival, heavy-duty suction machinery, and transparent upfront charges. Very polite crew and clean execution. Highly recommended for all residential and commercial septic cleaning.”",
+      n: "Jarupla Thirupathi",
+      r: "Verified Google Review · Hyderabad",
+      av: "images/resource/avatar-2.webp",
+      ph: "images/resource/commercial-septic-tank-cleaning.webp"
     }
   ];
 
@@ -440,35 +454,48 @@
       var phone = getVal('phone') || '';
       var email = getVal('email') || '';
       var service = getVal('type') || getVal('service') || 'Septic Tank Cleaning';
+      var area = getVal('area') || '';
+      var urgency = getVal('urgency') || '';
       var message = getVal('msg') || getVal('message') || '';
 
-      var waText = "Hello Green Septic Tank Cleaning Services,\n" +
-        "I would like to request a quote / book a service:\n" +
-        "• Name: " + fullName + "\n" +
-        "• Phone: " + phone + "\n" +
-        (email ? "• Email: " + email + "\n" : "") +
-        "• Service: " + service + "\n" +
-        (message ? "• Details: " + message + "\n" : "") +
-        "Please confirm vehicle availability and cost estimate.";
+      var lines = [
+        "Hello Green Septic Tank Cleaning Services,",
+        "I would like to request a quote / book a service:",
+        "• Name: " + fullName,
+        "• Phone: " + phone
+      ];
+      if (email) {
+        lines.push("• Email: " + email);
+      }
+      if (service) {
+        lines.push("• Service: " + service);
+      }
+      if (area) {
+        lines.push("• Locality / Area: " + area);
+      }
+      if (urgency) {
+        lines.push("• Urgency: " + urgency);
+      }
+      if (message) {
+        lines.push("• Details: " + message);
+      }
+      lines.push("Please confirm vehicle availability and cost estimate.");
 
+      var waText = lines.join("\n");
       var waUrl = "https://wa.me/919440514057?text=" + encodeURIComponent(waText);
 
-      t.innerHTML = [
-        '<h3>Thank you<em>.</em></h3>',
-        '<p class="respond">Your request has reached our Hyderabad dispatch desk. We typically respond within 15–30 minutes.</p>',
-        '<div style="margin-top:24px; padding:22px; background:#fff; border:1px solid var(--line); border-radius:16px; width:100%;">',
-        '  <p style="margin:0 0 16px; font-size:15px; color:var(--ink);">Thank you, <b>' + fullName + '</b>! Our team will contact you at <b>' + (phone || email) + '</b> shortly. For immediate priority dispatch, tap below to confirm on WhatsApp:</p>',
-        '  <a href="' + waUrl + '" target="_blank" rel="noopener" class="btn btn-whatsapp" style="display:inline-flex; width:100%; justify-content:center; padding:15px 24px; font-size:1rem; border-radius:12px;">',
-        '    <span class="circle"></span>',
-        '    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="margin-right:8px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>',
-        '    <span>Connect on WhatsApp Now</span>',
-        '  </a>',
-        '</div>'
-      ].join('');
-
-      if (typeof initCircleButtons === 'function') {
-        initCircleButtons();
+      var submitBtn = t.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        var btnSpan = submitBtn.querySelector('span:not(.circle)');
+        if (btnSpan) {
+          btnSpan.textContent = 'Redirecting to WhatsApp...';
+        } else {
+          submitBtn.textContent = 'Redirecting to WhatsApp...';
+        }
       }
+
+      window.location.href = waUrl;
     });
   }
 
